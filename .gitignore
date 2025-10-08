@@ -1,0 +1,8 @@
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+nccm-cov/
+.coverage
+*.zip
+nccm-archive
+pcm

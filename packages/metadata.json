@@ -1,0 +1,32 @@
+{
+    "$schema": "https://go.kicad.org/pcm/schemas/v1",
+    "name": "Net Class Clearance Matrix (NCCM)",
+    "identifier": "com.github.Mage-Control-Systems.NCCM",
+    "description": "Net Class Clearance Matrix.",
+    "description_full": "A matrix table GUI to add custom rule clearances between different net classes.",
+    "type": "plugin",
+    "author": {
+        "name": "Yiannis Michael",
+        "contact": {
+            "web": "https://github.com/ymich9963"
+        }
+    },
+    "maintainer": {
+        "name": "Yiannis Michael",
+        "contact": {
+            "web": "https://github.com/ymich9963"
+        }
+    },
+    "license": "GPL-3.0",
+    "resources": {
+        "homepage": "https://github.com/Mage-Control-Systems/NCCM"
+    },
+    "versions": [
+        {
+            "version": "0.1",
+            "status": "stable",
+            "kicad_version": "9.0",
+            "runtime": "ipc"
+        }
+    ]
+}
