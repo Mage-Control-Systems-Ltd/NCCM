@@ -4,6 +4,6 @@
 (rule "CLR_BAT-_to_LED"
   (severity error)
   (condition "A.NetClass == 'BAT-' && B.NetClass == 'LED'")
-  (constraint clearance (min 5.0 mm))
+  (constraint clearance (min 5.0mm))
 )
 ### 4E43434D NCCM SECTION END ###
