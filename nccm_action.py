@@ -33,6 +33,7 @@ MIN = 0.000000
 MAX = 999.999999
 DP = 6
 COL_WIDTH = 100
+MAX_CHAR_COL_LABEL = 12
 
 # Section strings
 SECTION_START_STR = "### 4E43434D NCCM SECTION START ###\n"
@@ -85,6 +86,7 @@ class NetClassClearanceMatrix(NetClassClearanceMatrixDialog):
         self.generate_coords("top")
         self.init_grid()
         self.get_existing_data()
+        self.refresh_sizes()
 
     def get_existing_data(self) -> int:
         """Get data from the existing project kicad_dru file.
@@ -208,14 +210,16 @@ class NetClassClearanceMatrix(NetClassClearanceMatrixDialog):
             self.gridNCCM.AppendCols(1, True)
             self.gridNCCM.SetColLabelValue(pos, net_class.name)
 
-        self.refresh_sizes()
-
         # Set the column headers to be the same size as other cells
         self.gridNCCM.SetColLabelSize(self.gridNCCM.GetRowSize(0))
 
         # Set the default column width
         for col in range(self.class_count):
             self.gridNCCM.SetColSize(col, COL_WIDTH)
+            if len(self.gridNCCM.GetColLabelValue(col)) > MAX_CHAR_COL_LABEL:
+                self.gridNCCM.AutoSizeColumn(col)
+
+        self.auto_size_row_labels_width()
 
         # Set the invalid coords to have dashes
         for invalid_coord in self.invalid_coords:
@@ -225,6 +229,21 @@ class NetClassClearanceMatrix(NetClassClearanceMatrixDialog):
                 invalid_coord[1],
                 wx.SystemSettings.GetColour(wx.SYS_COLOUR_SCROLLBAR),
             )
+
+    def auto_size_row_labels_width(self):
+        """Adjust row label width to fit the longest label."""
+        dc = wx.ClientDC(self.gridNCCM)
+        dc.SetFont(self.gridNCCM.GetLabelFont())
+
+        max_width = 0
+        for row in range(self.gridNCCM.GetNumberRows()):
+            label = self.gridNCCM.GetRowLabelValue(row)
+            width, _ = dc.GetTextExtent(label)
+            max_width = max(max_width, width)
+
+        # Add padding (e.g., 10 pixels)
+        self.gridNCCM.SetRowLabelSize(max_width + 10)
+
 
     def refresh_sizes(self):
         """Refresh the window when new data is added to the matrix"""
