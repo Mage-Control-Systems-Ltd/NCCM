@@ -24,7 +24,7 @@ from wx import PyEventBinder
 
 from nccm_gui import NetClassClearanceMatrixDialog, InfoDialog
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 __author__ = "Yiannis Michael (ymich9963)"
 __license__ = "GNU General Public License v3.0 only"
 
