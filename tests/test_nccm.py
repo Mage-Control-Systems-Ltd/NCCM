@@ -32,13 +32,19 @@ def test_info_dialogue(app):
 
 
 def test_init(frame: NetClassClearanceMatrix):
-    assert frame.class_count == 4
+    assert frame.class_count == 5
 
     net_class_names = []
     for net_class in frame.net_classes:
         net_class_names.append(net_class.name)
 
-    expected_net_class_names = ["Default", "BAT+", "BAT-", "LED"]
+    expected_net_class_names = [
+        "Default",
+        "BAT+",
+        "BAT-",
+        "LED",
+        "THIS_IS_A_LONG_NET_CLASS_NAME",
+    ]
     assert net_class_names == expected_net_class_names
 
 
@@ -54,8 +60,24 @@ def test_generate_coords(frame: NetClassClearanceMatrix):
         (1, 3),
         (2, 3),
         (3, 3),
+        (0, 4),
+        (1, 4),
+        (2, 4),
+        (3, 4),
+        (4, 4),
     ]
-    expected_invalid_coords = [(2, 1), (3, 1), (2, 0), (3, 0), (1, 0), (3, 2)]
+    expected_invalid_coords = [
+        (4, 0),
+        (4, 3),
+        (3, 1),
+        (1, 0),
+        (4, 2),
+        (3, 0),
+        (2, 1),
+        (3, 2),
+        (4, 1),
+        (2, 0),
+    ]
 
     assert expected_valid_coords == frame.valid_coords
     assert expected_invalid_coords == frame.invalid_coords
@@ -64,7 +86,7 @@ def test_generate_coords(frame: NetClassClearanceMatrix):
 def test_get_existing_data(frame: NetClassClearanceMatrix):
     dru_file = frame.project.name + ".kicad_dru"
     dru_path = os.path.join(frame.project.path, dru_file)
-    expected_class_val_dict = {("BAT-", "LED"): "5.0 mm"}
+    expected_class_val_dict = {("BAT-", "LED"): "5.0mm"}
 
     # Check the correct data is read
     assert expected_class_val_dict == frame.class_val_dict
