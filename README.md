@@ -7,6 +7,9 @@
 Net class clearance matrix plugin for KiCad! To generate custom rules for clearances between net classes through a matrix GUI.
 
 ## Installing
+### Via KiCad's Plugin and Content Manager
+Search 'NCCM' in KiCad's PCM and it should show up! Select 'Yes' when prompted to enable KiCad's Plugin API.
+
 ### Manual
 To install place this entire folder in the platform-dependent plugins directory,
 
@@ -19,10 +22,6 @@ To install place this entire folder in the platform-dependent plugins directory,
 Then in KiCad preferences go to `Plugins`, check the `Enable KiCad API` checkbox.
 
 Restart KiCad and it should appear in the layout editor on the top right.
-
-### Via KiCad's PCM
-> [!IMPORTANT]  
-> We're waiting on our NCCM merge request to be approved on GitLab ([link](https://gitlab.com/kicad/addons/metadata/-/merge_requests/502)). Once done, this section will be updated.
 
 ## Using
 On succesful installation, open KiCad and you should see the NCCM logo on the toolbar. Once clicked you should see this simple GUI populated with all your project net classes.
