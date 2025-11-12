@@ -58,6 +58,8 @@ class NetClassClearanceMatrixDialog ( wx.Dialog ):
 
         # Cell Defaults
         self.gridNCCM.SetDefaultCellAlignment( wx.ALIGN_CENTER, wx.ALIGN_CENTER )
+        self.gridNCCM.SetMaxSize( wx.Size( 1700,800 ) )
+
         gridSizer.Add( self.gridNCCM, 0, wx.ALL, 5 )
 
 

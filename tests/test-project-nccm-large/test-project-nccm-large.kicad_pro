@@ -51,13 +51,7 @@
           "min_clearance": 0.5
         }
       },
-      "diff_pair_dimensions": [
-        {
-          "gap": 0.0,
-          "via_gap": 0.0,
-          "width": 0.0
-        }
-      ],
+      "diff_pair_dimensions": [],
       "drc_exclusions": [],
       "meta": {
         "version": 2
@@ -186,9 +180,7 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [
-        0.0
-      ],
+      "track_widths": [],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
           "corner_radius_percentage": 80,
@@ -215,12 +207,7 @@
           "spacing": 0.6
         }
       },
-      "via_dimensions": [
-        {
-          "diameter": 0.0,
-          "drill": 0.0
-        }
-      ],
+      "via_dimensions": [],
       "zones_allow_external_fillets": false
     },
     "ipc2581": {
@@ -464,7 +451,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "test-project-nccm.kicad_pro",
+    "filename": "test-project-nccm-large.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -482,36 +469,207 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.1,
+        "track_width": 0.2,
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
       },
       {
-        "name": "BAT+",
+        "name": "TEST1",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 32,
+        "schematic_color": "rgba(0, 0, 0, 0.000)"
+      },
+      {
+        "name": "TEST10",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 23,
+        "schematic_color": "rgba(0, 0, 0, 0.000)"
+      },
+      {
+        "name": "TEST11",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 22,
+        "schematic_color": "rgba(0, 0, 0, 0.000)"
+      },
+      {
+        "name": "TEST12",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 21,
+        "schematic_color": "rgba(0, 0, 0, 0.000)"
+      },
+      {
+        "name": "TEST13",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 20,
+        "schematic_color": "rgba(0, 0, 0, 0.000)"
+      },
+      {
+        "name": "TEST14",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 19,
+        "schematic_color": "rgba(0, 0, 0, 0.000)"
+      },
+      {
+        "name": "TEST15",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 18,
+        "schematic_color": "rgba(0, 0, 0, 0.000)"
+      },
+      {
+        "name": "TEST16",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 17,
+        "schematic_color": "rgba(0, 0, 0, 0.000)"
+      },
+      {
+        "name": "TEST17",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 16,
+        "schematic_color": "rgba(0, 0, 0, 0.000)"
+      },
+      {
+        "name": "TEST18",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 15,
+        "schematic_color": "rgba(0, 0, 0, 0.000)"
+      },
+      {
+        "name": "TEST19",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 14,
+        "schematic_color": "rgba(0, 0, 0, 0.000)"
+      },
+      {
+        "name": "TEST2",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 31,
+        "schematic_color": "rgba(0, 0, 0, 0.000)"
+      },
+      {
+        "name": "TEST20",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 13,
+        "schematic_color": "rgba(0, 0, 0, 0.000)"
+      },
+      {
+        "name": "TEST21",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 12,
+        "schematic_color": "rgba(0, 0, 0, 0.000)"
+      },
+      {
+        "name": "TEST22",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 11,
+        "schematic_color": "rgba(0, 0, 0, 0.000)"
+      },
+      {
+        "name": "TEST23",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 10,
+        "schematic_color": "rgba(0, 0, 0, 0.000)"
+      },
+      {
+        "name": "TEST24",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 9,
+        "schematic_color": "rgba(0, 0, 0, 0.000)"
+      },
+      {
+        "name": "TEST25",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 8,
+        "schematic_color": "rgba(0, 0, 0, 0.000)"
+      },
+      {
+        "name": "TEST26",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 7,
+        "schematic_color": "rgba(0, 0, 0, 0.000)"
+      },
+      {
+        "name": "TEST27",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 6,
+        "schematic_color": "rgba(0, 0, 0, 0.000)"
+      },
+      {
+        "name": "TEST28",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 5,
+        "schematic_color": "rgba(0, 0, 0, 0.000)"
+      },
+      {
+        "name": "TEST29",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 4,
+        "schematic_color": "rgba(0, 0, 0, 0.000)"
+      },
+      {
+        "name": "TEST3",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 30,
+        "schematic_color": "rgba(0, 0, 0, 0.000)"
+      },
+      {
+        "name": "TEST30",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 3,
-        "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 1.6
+        "schematic_color": "rgba(0, 0, 0, 0.000)"
       },
       {
-        "name": "BAT-",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 1,
-        "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.4
-      },
-      {
-        "name": "LED",
+        "name": "TEST31",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 2,
-        "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.8
+        "schematic_color": "rgba(0, 0, 0, 0.000)"
       },
       {
-        "name": "THIS_IS_A_LONG_NET_CLASS_NAME",
+        "name": "TEST32",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
+        "schematic_color": "rgba(0, 0, 0, 0.000)"
+      },
+      {
+        "name": "TEST33",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)"
+      },
+      {
+        "name": "TEST4",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 29,
+        "schematic_color": "rgba(0, 0, 0, 0.000)"
+      },
+      {
+        "name": "TEST5",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 28,
+        "schematic_color": "rgba(0, 0, 0, 0.000)"
+      },
+      {
+        "name": "TEST6",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 27,
+        "schematic_color": "rgba(0, 0, 0, 0.000)"
+      },
+      {
+        "name": "TEST7",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 26,
+        "schematic_color": "rgba(0, 0, 0, 0.000)"
+      },
+      {
+        "name": "TEST8",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 25,
+        "schematic_color": "rgba(0, 0, 0, 0.000)"
+      },
+      {
+        "name": "TEST9",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 24,
         "schematic_color": "rgba(0, 0, 0, 0.000)"
       }
     ],
@@ -521,13 +679,154 @@
     "net_colors": null,
     "netclass_assignments": {
       "GND": [
-        "BAT-"
+        "TEST33"
       ],
-      "Net-(BT1-+)": [
-        "BAT+"
+      "Net-(R1-Pad2)": [
+        "TEST2"
       ],
-      "Net-(D1-A)": [
-        "LED"
+      "Net-(R10-Pad1)": [
+        "TEST10"
+      ],
+      "Net-(R10-Pad2)": [
+        "TEST11"
+      ],
+      "Net-(R11-Pad1)": [
+        "TEST13"
+      ],
+      "Net-(R11-Pad2)": [
+        "TEST12"
+      ],
+      "Net-(R12-Pad1)": [
+        "TEST25"
+      ],
+      "Net-(R12-Pad2)": [
+        "TEST24"
+      ],
+      "Net-(R13-Pad2)": [
+        "TEST14"
+      ],
+      "Net-(R14-Pad1)": [
+        "TEST29"
+      ],
+      "Net-(R14-Pad2)": [
+        "TEST15"
+      ],
+      "Net-(R15-Pad1)": [
+        "TEST17"
+      ],
+      "Net-(R15-Pad2)": [
+        "TEST16"
+      ],
+      "Net-(R16-Pad2)": [
+        "TEST3"
+      ],
+      "Net-(R17-Pad1)": [
+        "TEST4"
+      ],
+      "Net-(R17-Pad2)": [
+        "TEST18"
+      ],
+      "Net-(R18-Pad1)": [
+        "TEST6"
+      ],
+      "Net-(R18-Pad2)": [
+        "TEST19"
+      ],
+      "Net-(R19-Pad1)": [
+        "TEST21"
+      ],
+      "Net-(R19-Pad2)": [
+        "TEST20"
+      ],
+      "Net-(R2-Pad1)": [
+        "TEST5"
+      ],
+      "Net-(R2-Pad2)": [
+        "TEST3"
+      ],
+      "Net-(R20-Pad1)": [
+        "TEST10"
+      ],
+      "Net-(R20-Pad2)": [
+        "TEST11"
+      ],
+      "Net-(R21-Pad1)": [
+        "TEST12"
+      ],
+      "Net-(R21-Pad2)": [
+        "TEST22"
+      ],
+      "Net-(R22-Pad1)": [
+        "TEST14"
+      ],
+      "Net-(R22-Pad2)": [
+        "TEST23"
+      ],
+      "Net-(R23-Pad1)": [
+        "TEST25"
+      ],
+      "Net-(R23-Pad2)": [
+        "TEST24"
+      ],
+      "Net-(R24-Pad1)": [
+        "TEST18"
+      ],
+      "Net-(R24-Pad2)": [
+        "TEST19"
+      ],
+      "Net-(R25-Pad2)": [
+        "TEST26"
+      ],
+      "Net-(R26-Pad2)": [
+        "TEST27"
+      ],
+      "Net-(R27-Pad1)": [
+        "TEST29"
+      ],
+      "Net-(R27-Pad2)": [
+        "TEST28"
+      ],
+      "Net-(R28-Pad2)": [
+        "TEST27"
+      ],
+      "Net-(R29-Pad2)": [
+        "TEST30"
+      ],
+      "Net-(R3-Pad1)": [
+        "TEST5"
+      ],
+      "Net-(R3-Pad2)": [
+        "TEST4"
+      ],
+      "Net-(R30-Pad2)": [
+        "TEST31"
+      ],
+      "Net-(R31-Pad2)": [
+        "TEST32"
+      ],
+      "Net-(R4-Pad1)": [
+        "TEST9"
+      ],
+      "Net-(R5-Pad2)": [
+        "TEST6"
+      ],
+      "Net-(R6-Pad1)": [
+        "TEST13"
+      ],
+      "Net-(R6-Pad2)": [
+        "TEST7"
+      ],
+      "Net-(R7-Pad1)": [
+        "TEST9"
+      ],
+      "Net-(R7-Pad2)": [
+        "TEST8"
+      ],
+      "Net-(R8-Pad1)": [
+        "TEST17"
+      ],
+      "VCC": [
+        "TEST1"
       ]
     },
     "netclass_patterns": []
@@ -610,12 +909,24 @@
           "label": "Datasheet",
           "name": "Datasheet",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Description",
+          "name": "Description",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
       "include_excluded_from_bom": true,
-      "name": "Default Editing",
+      "name": "",
       "sort_asc": true,
       "sort_field": "Reference"
     },
@@ -661,7 +972,7 @@
   },
   "sheets": [
     [
-      "72803168-84fa-4847-9163-f28c8a05b0d8",
+      "04ebb6fe-5ca0-43b8-907f-e3d50d9ea676",
       "Root"
     ]
   ],
