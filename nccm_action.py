@@ -252,7 +252,7 @@ class NetClassClearanceMatrix(NetClassClearanceMatrixDialog):
         self.gridNCCM.ForceRefresh()
 
         # Gets the best size based on the new grid size
-        self.SetSizeHints(self.GetBestSize(), wx.Size(1000, 600))
+        self.SetSizeHints(self.GetBestSize())
 
         # Fits the window to the new size
         self.Fit()
